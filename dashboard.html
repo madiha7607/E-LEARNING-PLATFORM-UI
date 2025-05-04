@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LearnHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Learn<span>Hub</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="#" class="btn-login">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>My Learning Dashboard</h1>
+                <div class="user-profile">
+
+                    <span>Welcome back, Alex!</span>
+                </div>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <i class="fas fa-book-open"></i>
+                    <div>
+                        <h3>Enrolled Courses</h3>
+                        <p>5</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-certificate"></i>
+                    <div>
+                        <h3>Certificates</h3>
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Learning Hours</h3>
+                        <p>47</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <div>
+                        <h3>Completion Rate</h3>
+                        <p>78%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="progress-section">
+                    <h2>Courses in Progress</h2>
+                    <div class="progress-courses">
+                        <div class="progress-card">
+
+                            <div class="progress-info">
+                                <h3>Complete Web Development Bootcamp</h3>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%;"></div>
+                                    <span>65% Complete</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-check-circle"></i> 28/45 Lectures</span>
+                                    <span><i class="fas fa-clock"></i> 12 Hours Left</span>
+                                </div>
+                                <a href="course-detail.html" class="btn-secondary">Continue Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="progress-card">
+
+                            <div class="progress-info">
+                                <h3>Data Science Fundamentals</h3>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 30%;"></div>
+                                    <span>30% Complete</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-check-circle"></i> 11/38 Lectures</span>
+                                    <span><i class="fas fa-clock"></i> 20 Hours Left</span>
+                                </div>
+                                <a href="course-detail.html" class="btn-secondary">Continue Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="completed-section">
+                    <h2>Completed Courses</h2>
+                    <div class="completed-courses">
+                        <div class="completed-card">
+
+                            <div class="completed-info">
+                                <h3>HTML & CSS Mastery</h3>
+                                <div class="completion-date">
+                                    <i class="fas fa-calendar-alt"></i> Completed on June 15, 2023
+                                </div>
+                                <div class="certificate">
+                                    <i class="fas fa-certificate"></i> Certificate Earned
+                                </div>
+                                <a href="#" class="btn-secondary">View Certificate</a>
+                            </div>
+                        </div>
+
+                        <div class="completed-card">
+
+                            <div class="completed-info">
+                                <h3>JavaScript Basics</h3>
+                                <div class="completion-date">
+                                    <i class="fas fa-calendar-alt"></i> Completed on May 2, 2023
+                                </div>
+                                <div class="certificate">
+                                    <i class="fas fa-certificate"></i> Certificate Earned
+                                </div>
+                                <a href="#" class="btn-secondary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommendations-section">
+                    <h2>Recommended For You</h2>
+                    <div class="recommendations-grid">
+                        <div class="recommendation-card">
+
+                            <h3>React.js Complete Guide</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span>(1,892)</span>
+                            </div>
+                            <a href="course-detail.html" class="btn-secondary">View Course</a>
+                        </div>
+
+                        <div class="recommendation-card">
+
+                            <h3>Node.js Backend Development</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span>(1,245)</span>
+                            </div>
+                            <a href="course-detail.html" class="btn-secondary">View Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Learn<span>Hub</span></div>
+                <p>&copy; 2025 LearnHub. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
